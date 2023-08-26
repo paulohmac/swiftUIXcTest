@@ -14,7 +14,7 @@ protocol ServerRequest{
 }
 
 private  struct Constants  {
-    static let url : StaticString = ""
+    static let url : StaticString = "https://verbenyi.com/customers.json"
 }
 
 class  ServerHttpRequest: ServerRequest{
@@ -25,7 +25,7 @@ class  ServerHttpRequest: ServerRequest{
     }
     
     func getCustomerAccount() async throws -> [Customer]? {
-        var data = try await sendRequest(url: self.url)
+        let data = try await sendRequest(url: self.url)
         guard let jsonData = data else { return nil }
         let decoder = JSONDecoder()
         let customerModel = try? decoder.decode([Customer].self, from: jsonData)

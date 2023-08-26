@@ -7,13 +7,22 @@
 
 import Foundation
 
-class CustomerViewModel{
-    lazy var request : ServerRequest = ServiceFactory.getServiceInstance()
 
-    var customerList : [Customer]?
+class CustomerViewModel : ObservableObject{
+
+    private lazy var request : ServerRequest = ServiceFactory.getServiceInstance()
+    @Published var customerList : [Customer]?
     
-    func getCustomerList()async throws{
-        customerList = try await request.getCustomerAccount()
+    init(){
+    }
+    
+    @MainActor
+    func getCustomerList()async {
+        do{
+            customerList = try await request.getCustomerAccount()
+        }catch{
+            
+        }
     }
     
     

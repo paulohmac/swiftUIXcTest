@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C1D55202A9A9B7500D69DBE /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2182A992E4A00C1F3BF /* Customer.swift */; };
+		8C1D55212A9A9B8300D69DBE /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C22F2A9A919D00C1F3BF /* CustomerView.swift */; };
+		8C1D55222A9A9B8E00D69DBE /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C22F2A9A919D00C1F3BF /* CustomerView.swift */; };
 		8CB9C2142A992C2600C1F3BF /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2132A992C2600C1F3BF /* ServerRequest.swift */; };
 		8CB9C2152A992C2600C1F3BF /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2132A992C2600C1F3BF /* ServerRequest.swift */; };
 		8CB9C2162A992C2600C1F3BF /* ServerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2132A992C2600C1F3BF /* ServerRequest.swift */; };
 		8CB9C2192A992E4A00C1F3BF /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2182A992E4A00C1F3BF /* Customer.swift */; };
 		8CB9C21A2A992E4A00C1F3BF /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2182A992E4A00C1F3BF /* Customer.swift */; };
-		8CB9C21B2A992E4A00C1F3BF /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2182A992E4A00C1F3BF /* Customer.swift */; };
 		8CB9C21E2A99316500C1F3BF /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C21D2A99316500C1F3BF /* URL+Extensions.swift */; };
 		8CB9C21F2A99316500C1F3BF /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C21D2A99316500C1F3BF /* URL+Extensions.swift */; };
 		8CB9C2202A99316500C1F3BF /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C21D2A99316500C1F3BF /* URL+Extensions.swift */; };
@@ -22,8 +24,11 @@
 		8CB9C2272A9936F600C1F3BF /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2262A9936F600C1F3BF /* ServiceFactory.swift */; };
 		8CB9C2282A9936F600C1F3BF /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2262A9936F600C1F3BF /* ServiceFactory.swift */; };
 		8CB9C2292A9936F600C1F3BF /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C2262A9936F600C1F3BF /* ServiceFactory.swift */; };
+		8CB9C22C2A9A81D500C1F3BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C22B2A9A81D500C1F3BF /* MainView.swift */; };
+		8CB9C22D2A9A81D500C1F3BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C22B2A9A81D500C1F3BF /* MainView.swift */; };
+		8CB9C22E2A9A81D500C1F3BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C22B2A9A81D500C1F3BF /* MainView.swift */; };
+		8CB9C2322A9A919D00C1F3BF /* CustomerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB9C22F2A9A919D00C1F3BF /* CustomerView.swift */; };
 		8CC24D482A8D65E000BFF17C /* XcUiTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D472A8D65E000BFF17C /* XcUiTestApp.swift */; };
-		8CC24D4A2A8D65E000BFF17C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D492A8D65E000BFF17C /* ContentView.swift */; };
 		8CC24D4C2A8D65E200BFF17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC24D4B2A8D65E200BFF17C /* Assets.xcassets */; };
 		8CC24D4F2A8D65E200BFF17C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC24D4E2A8D65E200BFF17C /* Preview Assets.xcassets */; };
 		8CC24D592A8D65E200BFF17C /* XcUiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D582A8D65E200BFF17C /* XcUiTestTests.swift */; };
@@ -31,32 +36,16 @@
 		8CC24D652A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D642A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8CC24D552A8D65E200BFF17C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8CC24D3C2A8D65E000BFF17C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CC24D432A8D65E000BFF17C;
-			remoteInfo = XcUiTest;
-		};
-		8CC24D5F2A8D65E200BFF17C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8CC24D3C2A8D65E000BFF17C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8CC24D432A8D65E000BFF17C;
-			remoteInfo = XcUiTest;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		8CB9C2132A992C2600C1F3BF /* ServerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRequest.swift; sourceTree = "<group>"; };
 		8CB9C2182A992E4A00C1F3BF /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		8CB9C21D2A99316500C1F3BF /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		8CB9C2222A99338100C1F3BF /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
 		8CB9C2262A9936F600C1F3BF /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		8CB9C22B2A9A81D500C1F3BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		8CB9C22F2A9A919D00C1F3BF /* CustomerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerView.swift; sourceTree = "<group>"; };
 		8CC24D442A8D65E000BFF17C /* XcUiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcUiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC24D472A8D65E000BFF17C /* XcUiTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcUiTestApp.swift; sourceTree = "<group>"; };
-		8CC24D492A8D65E000BFF17C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CC24D4B2A8D65E200BFF17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC24D4E2A8D65E200BFF17C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CC24D542A8D65E200BFF17C /* XcUiTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcUiTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +113,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		8CB9C22A2A9A81BB00C1F3BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CB9C22B2A9A81D500C1F3BF /* MainView.swift */,
+				8CB9C22F2A9A919D00C1F3BF /* CustomerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8CC24D3B2A8D65E000BFF17C = {
 			isa = PBXGroup;
 			children = (
@@ -147,12 +145,12 @@
 		8CC24D462A8D65E000BFF17C /* XcUiTest */ = {
 			isa = PBXGroup;
 			children = (
+				8CB9C22A2A9A81BB00C1F3BF /* View */,
 				8CB9C2212A99335300C1F3BF /* ViewModel */,
 				8CB9C21C2A99315100C1F3BF /* Extension */,
 				8CB9C2172A992E0F00C1F3BF /* Model */,
 				8CB9C2122A992B7C00C1F3BF /* Networking */,
 				8CC24D472A8D65E000BFF17C /* XcUiTestApp.swift */,
-				8CC24D492A8D65E000BFF17C /* ContentView.swift */,
 				8CC24D4B2A8D65E200BFF17C /* Assets.xcassets */,
 				8CC24D4D2A8D65E200BFF17C /* Preview Content */,
 			);
@@ -215,7 +213,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8CC24D562A8D65E200BFF17C /* PBXTargetDependency */,
 			);
 			name = XcUiTestTests;
 			productName = XcUiTestTests;
@@ -233,7 +230,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				8CC24D602A8D65E200BFF17C /* PBXTargetDependency */,
 			);
 			name = XcUiTestUITests;
 			productName = XcUiTestUITests;
@@ -314,7 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CC24D4A2A8D65E000BFF17C /* ContentView.swift in Sources */,
+				8C1D55222A9A9B8E00D69DBE /* CustomerView.swift in Sources */,
+				8CB9C22C2A9A81D500C1F3BF /* MainView.swift in Sources */,
 				8CC24D482A8D65E000BFF17C /* XcUiTestApp.swift in Sources */,
 				8CB9C2232A99338100C1F3BF /* CustomerViewModel.swift in Sources */,
 				8CB9C21E2A99316500C1F3BF /* URL+Extensions.swift in Sources */,
@@ -328,7 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1D55212A9A9B8300D69DBE /* CustomerView.swift in Sources */,
 				8CB9C21A2A992E4A00C1F3BF /* Customer.swift in Sources */,
+				8CB9C22D2A9A81D500C1F3BF /* MainView.swift in Sources */,
 				8CB9C2242A99338100C1F3BF /* CustomerViewModel.swift in Sources */,
 				8CB9C2282A9936F600C1F3BF /* ServiceFactory.swift in Sources */,
 				8CB9C21F2A99316500C1F3BF /* URL+Extensions.swift in Sources */,
@@ -341,30 +340,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1D55202A9A9B7500D69DBE /* Customer.swift in Sources */,
 				8CC24D652A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift in Sources */,
+				8CB9C22E2A9A81D500C1F3BF /* MainView.swift in Sources */,
 				8CC24D632A8D65E200BFF17C /* XcUiTestUITests.swift in Sources */,
 				8CB9C2252A99338100C1F3BF /* CustomerViewModel.swift in Sources */,
 				8CB9C2202A99316500C1F3BF /* URL+Extensions.swift in Sources */,
 				8CB9C2292A9936F600C1F3BF /* ServiceFactory.swift in Sources */,
+				8CB9C2322A9A919D00C1F3BF /* CustomerView.swift in Sources */,
 				8CB9C2162A992C2600C1F3BF /* ServerRequest.swift in Sources */,
-				8CB9C21B2A992E4A00C1F3BF /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		8CC24D562A8D65E200BFF17C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8CC24D432A8D65E000BFF17C /* XcUiTest */;
-			targetProxy = 8CC24D552A8D65E200BFF17C /* PBXContainerItemProxy */;
-		};
-		8CC24D602A8D65E200BFF17C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8CC24D432A8D65E000BFF17C /* XcUiTest */;
-			targetProxy = 8CC24D5F2A8D65E200BFF17C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8CC24D662A8D65E200BFF17C /* Debug */ = {
