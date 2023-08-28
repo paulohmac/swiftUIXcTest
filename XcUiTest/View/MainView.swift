@@ -19,6 +19,13 @@ struct MainView: View {
                     CustomerView(customer: customer)
                 }
             }
+            Button("Reload Data") {
+                Task {
+                    await loadData()
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
         }
         .padding()
         .task {

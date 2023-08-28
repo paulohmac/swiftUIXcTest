@@ -8,27 +8,58 @@
 import XCTest
 
 final class XcUiTestUITests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+    var app: XCUIApplication!
+    var customerList: XCUIElementQuery!
+    var realodButton: XCUIElement!
  
-    func testMainScreen() throws {
-        let app = XCUIApplication()
-        app.images["Globo"].tap()
-        XCTAssertNotNil(app.images["Globo"],"Image is null")
-        XCTAssertEqual(app.staticTexts["Hello, world!"].label, "Hello, world!","Wrong hello word text")
+    override func setUpWithError() throws {
+        try super.setUpWithError()
+        app = XCUIApplication()
+        customerList = app.otherElements.cells
+        realodButton = app.otherElements.buttons["Reload Data"]
+        app.launch()
+    }
+
+    func testTotalCustomers(){
+        XCTAssertEqual(customerList.count, 4)
+    }
+
+    func testFirstCustomer(){
+        let firstCell = customerList.firstMatch
+        let title = firstCell.staticTexts["45.square"]
+        let subtitle = firstCell.staticTexts["Ivy Frazier"]
+        XCTAssertTrue(title.exists)
+        XCTAssertTrue(subtitle.exists)
+    }
+
+    func testRealodData(){
+        realodButton.tap()
+        _ = customerList.element.waitForExistence(timeout: 2)
+        XCTAssertEqual(customerList.count, 4)
+    }
+
+    func testConfirmCustomer(){
+        let firstCell = customerList.firstMatch
+        let confirm = firstCell.buttons["Confirm Button"]
+        XCTAssertTrue(confirm.exists)
+    }
+
+    func testTriggerConfirmButton(){
+        let firstCell = customerList.firstMatch
+        let confirm = firstCell.buttons["Confirm Button"]
+        confirm.tap()
+        XCTAssertNotNil( app.alerts["Alert Box"])
+        XCTAssertNotNil( app.alerts["Alert Box"].buttons["Yes"])
     }
     
+    
+    override func tearDownWithError() throws {
+        try super.tearDownWithError()
+        app = nil
+        customerList = nil
+        realodButton = nil
+    }
+ 
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.

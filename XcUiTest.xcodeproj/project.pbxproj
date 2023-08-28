@@ -33,7 +33,6 @@
 		8CC24D4F2A8D65E200BFF17C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC24D4E2A8D65E200BFF17C /* Preview Assets.xcassets */; };
 		8CC24D592A8D65E200BFF17C /* XcUiTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D582A8D65E200BFF17C /* XcUiTestTests.swift */; };
 		8CC24D632A8D65E200BFF17C /* XcUiTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D622A8D65E200BFF17C /* XcUiTestUITests.swift */; };
-		8CC24D652A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC24D642A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,7 +51,6 @@
 		8CC24D582A8D65E200BFF17C /* XcUiTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcUiTestTests.swift; sourceTree = "<group>"; };
 		8CC24D5E2A8D65E200BFF17C /* XcUiTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcUiTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CC24D622A8D65E200BFF17C /* XcUiTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcUiTestUITests.swift; sourceTree = "<group>"; };
-		8CC24D642A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcUiTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +175,6 @@
 			isa = PBXGroup;
 			children = (
 				8CC24D622A8D65E200BFF17C /* XcUiTestUITests.swift */,
-				8CC24D642A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift */,
 			);
 			path = XcUiTestUITests;
 			sourceTree = "<group>";
@@ -341,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1D55202A9A9B7500D69DBE /* Customer.swift in Sources */,
-				8CC24D652A8D65E200BFF17C /* XcUiTestUITestsLaunchTests.swift in Sources */,
 				8CB9C22E2A9A81D500C1F3BF /* MainView.swift in Sources */,
 				8CC24D632A8D65E200BFF17C /* XcUiTestUITests.swift in Sources */,
 				8CB9C2252A99338100C1F3BF /* CustomerViewModel.swift in Sources */,

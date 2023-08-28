@@ -25,6 +25,7 @@ class  ServerHttpRequest: ServerRequest{
     }
     
     func getCustomerAccount() async throws -> [Customer]? {
+        print("@@Load customers")
         let data = try await sendRequest(url: self.url)
         guard let jsonData = data else { return nil }
         let decoder = JSONDecoder()
